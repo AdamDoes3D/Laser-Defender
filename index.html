@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Laser Defender</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 540px; height: 960px; background: #231F20"></canvas>
+    <script src="Build/Laser Defender WebGL.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Laser Defender WebGL.data.gz",
+        frameworkUrl: "Build/Laser Defender WebGL.framework.js.gz",
+        codeUrl: "Build/Laser Defender WebGL.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "AdamDoes3D",
+        productName: "Laser Defender",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
